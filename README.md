@@ -1,5 +1,5 @@
 # ng2todo
-Angular2 todo list
+Angular2 todo list app, featured on [Medium](https://medium.com/@semeano/angular2-typescript-angularfire2-b1b967ba30ba)
 
 ##Requirements
 [NodeJS](https://nodejs.org)
