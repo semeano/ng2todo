@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let todo of todos | async">
+    <span>{{todo.$value}}</span> <span (click)="delete(todo)">[x]</span>
+  </li>
+</ul>
+<h3>Add new todo:</h3>
+<input type="text" [(ngModel)]="newTodo" (keydown.enter)="add()" />
