@@ -1,0 +1,9 @@
+md-icon {
+  display: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+md-list-item:hover md-icon {
+  display: inherit;
+}

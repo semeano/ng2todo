@@ -10,11 +10,10 @@
   {{/unless}}
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
   <ng2todo-app>Loading...</ng2todo-app>
-
-  
 
     {{#each scripts.polyfills}}<script src="{{.}}"></script>{{/each}}
     <script>
@@ -22,10 +21,6 @@
         System.import('main');
       }).catch(console.error.bind(console));
     </script>
-
-  
-
-
 
 </body>
 </html>
