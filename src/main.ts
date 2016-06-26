@@ -10,10 +10,15 @@ if (environment.production) {
 
 bootstrap(Ng2todoAppComponent, [
   FIREBASE_PROVIDERS,
-  defaultFirebase('https://ng2tododb.firebaseio.com/'),
+  defaultFirebase({
+    apiKey: "AIzaSyC79hFzTkPgyJlRG3Cs6BbPCpl-AIUYaOM",
+    authDomain: "ng2todo-20292.firebaseapp.com",
+    databaseURL: "https://ng2todo-20292.firebaseio.com",
+    storageBucket: "ng2todo-20292.appspot.com",
+  }),
   firebaseAuthConfig({
-      provider: AuthProviders.Anonymous,
-      method: AuthMethods.Anonymous
-    }),
+    provider: AuthProviders.Anonymous,
+    method: AuthMethods.Anonymous
+  }),
   HTTP_PROVIDERS
 ]);
